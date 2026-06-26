@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furivo — Privacy Policy / 隱私權政策</title>
+  <meta name="description" content="Privacy Policy for the Furivo pet health & care app. / Furivo 寵物健康照護 App 隱私權政策。" />
+  <style>
+    :root {
+      --brand: #FF6F5E;
+      --brand-2: #2DC6B6;
+      --ink: #2b2b2e;
+      --muted: #6b6b72;
+      --bg: #fff8f4;
+      --card: #ffffff;
+      --line: #f0e3db;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+    header.masthead { text-align: center; padding: 8px 0 4px; }
+    .logo {
+      font-size: 40px; line-height: 1;
+    }
+    h1 { font-size: 1.7rem; margin: 12px 0 4px; }
+    .subtitle { color: var(--muted); margin: 0; font-size: 0.95rem; }
+    .toggle {
+      display: flex; gap: 8px; justify-content: center;
+      margin: 24px 0 8px;
+    }
+    .toggle button {
+      appearance: none; border: 1px solid var(--line); background: var(--card);
+      color: var(--muted); padding: 8px 18px; border-radius: 999px;
+      font-size: 0.95rem; cursor: pointer; font-weight: 600;
+      transition: all .15s ease;
+    }
+    .toggle button.active {
+      background: var(--brand); color: #fff; border-color: var(--brand);
+    }
+    .effective { text-align: center; color: var(--muted); font-size: 0.85rem; margin: 4px 0 28px; }
+    article {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 16px; padding: 28px 26px;
+      box-shadow: 0 6px 24px rgba(255, 111, 94, 0.06);
+    }
+    h2 {
+      font-size: 1.18rem; margin: 28px 0 10px; padding-bottom: 6px;
+      border-bottom: 2px solid var(--line);
+    }
+    h2:first-child { margin-top: 0; }
+    h3 { font-size: 1.02rem; margin: 18px 0 6px; }
+    p, li { color: var(--ink); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--brand); }
+    .pill {
+      display: inline-block; background: rgba(45,198,182,0.12); color: #1c8377;
+      border-radius: 6px; padding: 1px 8px; font-size: 0.82rem; font-weight: 600;
+    }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    footer { text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 28px; }
+    .contact {
+      background: rgba(255,111,94,0.06); border: 1px solid var(--line);
+      border-radius: 12px; padding: 14px 18px; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="logo">🐾</div>
+      <h1>Furivo</h1>
+      <p class="subtitle">Pet Health &amp; Care</p>
+    </header>
+
+    <div class="toggle" role="tablist">
+      <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+      <button id="btn-zh" onclick="setLang('zh')">繁體中文</button>
+    </div>
+    <p class="effective" id="effective">Effective date: 26 June 2026 · Last updated: 26 June 2026</p>
+
+    <!-- ============ ENGLISH ============ -->
+    <article id="lang-en" class="lang active">
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy explains how the <strong>Furivo</strong> app (“Furivo”, “the app”, “we”, “us”) handles information when you use it. Furivo is a pet health and care app that helps you manage your pets’ records, reminders, and daily care.</p>
+      <p><strong>In short:</strong> Furivo is designed to keep your data on your own device. We do not sell your personal information, and we do not have a server that stores your pet records.</p>
+
+      <h2>1. Information You Provide</h2>
+      <p>You may enter information into Furivo to use its features, including:</p>
+      <ul>
+        <li>Pet profiles (name, species, breed, birthday, sex, microchip number, weight, allergies, insurance and emergency contact details);</li>
+        <li>Health and care records (vaccinations, medications, medical visits, symptoms, diagnoses, costs, feeding, bathing/grooming, and similar entries);</li>
+        <li>Photos you choose to add (e.g. pet avatars, album photos, and attachments to medical records);</li>
+        <li>Expenses and reminders you create.</li>
+      </ul>
+      <p>This information is stored <strong>locally on your device</strong> using Apple’s Core Data framework.</p>
+
+      <h2>2. Photos</h2>
+      <p>Furivo can access your photo library only when you choose to add a photo. Selected photos are stored within the app on your device (and synced to your private iCloud account if iCloud Sync is enabled — see below). Furivo does not upload your photos to us or any third party.</p>
+
+      <h2>3. iCloud Sync <span class="pill">Optional · Off by default</span></h2>
+      <p>Furivo offers optional iCloud sync so your data stays consistent across your own Apple devices and is backed up. This feature is <strong>turned off by default</strong>. When you turn it on in <em>Settings → Data → iCloud Sync</em>:</p>
+      <ul>
+        <li>Your data is mirrored to <strong>your own private iCloud database</strong> using Apple’s CloudKit. It is associated with your Apple ID and is not accessible to us.</li>
+        <li>Apple processes and stores this data under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>.</li>
+        <li>If you leave it off, Furivo behaves as a purely local app and does not touch iCloud.</li>
+      </ul>
+
+      <h2>4. Notifications</h2>
+      <p>With your permission, Furivo schedules <strong>local notifications</strong> on your device to remind you about vaccinations, medications, grooming, birthdays, and similar care tasks. These reminders are generated and delivered on-device and are not sent to a server.</p>
+
+      <h2>5. Face ID / Passcode Lock</h2>
+      <p>You can optionally protect the app with Face ID, Touch ID, or your device passcode. This authentication is handled entirely by Apple’s system frameworks on your device. Furivo never receives or stores your biometric data.</p>
+
+      <h2>6. Analytics &amp; Diagnostics</h2>
+      <p>Furivo uses Google Firebase to help us understand usage and keep the app stable:</p>
+      <ul>
+        <li><strong>Firebase Analytics</strong> — aggregated, app-usage statistics;</li>
+        <li><strong>Firebase Crashlytics</strong> — crash and stability diagnostics;</li>
+        <li><strong>Firebase Remote Config</strong> — remote configuration of app settings.</li>
+      </ul>
+      <p>These services may process limited technical and usage data (such as device model, OS version, app version, and crash logs) in accordance with <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google’s Privacy &amp; Security in Firebase</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s Privacy Policy</a>. This data is not used to identify you personally and does not include the contents of your pet records.</p>
+
+      <h2>7. How We Use Information</h2>
+      <p>Information is used solely to provide and improve the app’s features — storing your records, showing reminders, syncing across your devices (if enabled), and diagnosing crashes. We do <strong>not</strong> sell, rent, or share your personal information for advertising.</p>
+
+      <h2>8. Data Retention &amp; Deletion</h2>
+      <p>Your records remain on your device until you delete them or uninstall the app. You can delete individual entries at any time within the app. If iCloud Sync is enabled, deleting data on one device removes it from your iCloud database and your other synced devices. Uninstalling the app removes its local data from that device.</p>
+
+      <h2>9. Children’s Privacy</h2>
+      <p>Furivo is not directed to children under 13 and does not knowingly collect personal information from children.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the “Last updated” date above.</p>
+
+      <h2>11. Contact Us</h2>
+      <div class="contact">
+        <p style="margin:0">If you have any questions about this Privacy Policy, please contact us:</p>
+        <p style="margin:6px 0 0"><strong>Email:</strong> <a href="mailto:j4688821105@gmail.com">j4688821105@gmail.com</a></p>
+      </div>
+    </article>
+
+    <!-- ============ 繁體中文 ============ -->
+    <article id="lang-zh" class="lang">
+      <h2>隱私權政策</h2>
+      <p>本隱私權政策說明 <strong>Furivo</strong> App（以下稱「Furivo」、「本 App」、「我們」）在您使用時如何處理資訊。Furivo 是一款寵物健康與照護 App，協助您管理寵物的紀錄、提醒與日常照護。</p>
+      <p><strong>重點摘要：</strong>Furivo 的設計以「資料留在您自己的裝置」為原則。我們不會販售您的個人資訊，也沒有任何伺服器儲存您的寵物紀錄。</p>
+
+      <h2>一、您提供的資訊</h2>
+      <p>為使用各項功能，您可在 Furivo 中輸入下列資訊：</p>
+      <ul>
+        <li>寵物基本資料（名稱、物種、品種、生日、性別、晶片號碼、體重、過敏、保險與緊急聯絡資訊）；</li>
+        <li>健康與照護紀錄（疫苗、用藥、就醫、症狀、診斷、費用、餵食、洗澡／美容等項目）；</li>
+        <li>您選擇加入的照片（例如寵物頭像、相簿照片、病歷附件照片）；</li>
+        <li>您建立的支出與提醒。</li>
+      </ul>
+      <p>上述資訊皆透過 Apple 的 Core Data 框架<strong>儲存在您的裝置本機</strong>。</p>
+
+      <h2>二、照片</h2>
+      <p>只有在您主動選擇加入照片時，Furivo 才會存取您的相片圖庫。所選照片會儲存在您裝置上的 App 內（若您啟用 iCloud 同步，則會同步至您的私人 iCloud 帳號，詳見下方）。Furivo 不會將您的照片上傳給我們或任何第三方。</p>
+
+      <h2>三、iCloud 同步 <span class="pill">選用 · 預設關閉</span></h2>
+      <p>Furivo 提供選用的 iCloud 同步，讓您的資料在自己的多台 Apple 裝置間保持一致並進行備份。此功能<strong>預設為關閉</strong>。當您於<em>設定 → 資料 → iCloud 同步</em>開啟後：</p>
+      <ul>
+        <li>您的資料會透過 Apple 的 CloudKit 鏡像至<strong>您自己的私人 iCloud 資料庫</strong>，與您的 Apple ID 綁定，我們無法存取。</li>
+        <li>Apple 依其<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">隱私權政策</a>處理與儲存這些資料。</li>
+        <li>若您維持關閉，Furivo 等同純本地 App，完全不會接觸 iCloud。</li>
+      </ul>
+
+      <h2>四、通知</h2>
+      <p>在取得您的許可後，Furivo 會在您的裝置上排程<strong>本機通知</strong>，提醒您疫苗、用藥、美容、生日等照護事項。這些提醒由裝置本機產生與發送，不會傳送至任何伺服器。</p>
+
+      <h2>五、Face ID／密碼鎖</h2>
+      <p>您可選擇以 Face ID、Touch ID 或裝置密碼保護本 App。此驗證完全由您裝置上的 Apple 系統框架處理，Furivo 不會取得或儲存您的生物辨識資料。</p>
+
+      <h2>六、分析與診斷</h2>
+      <p>Furivo 使用 Google Firebase 協助我們了解使用情形並維持 App 穩定：</p>
+      <ul>
+        <li><strong>Firebase Analytics</strong>——彙總性的 App 使用統計；</li>
+        <li><strong>Firebase Crashlytics</strong>——當機與穩定度診斷；</li>
+        <li><strong>Firebase Remote Config</strong>——遠端設定 App 參數。</li>
+      </ul>
+      <p>這些服務可能會依<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隱私與安全說明</a>及 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>處理有限的技術與使用資料（例如裝置型號、作業系統版本、App 版本與當機紀錄）。這些資料不會用於辨識您個人身分，也不包含您寵物紀錄的內容。</p>
+
+      <h2>七、我們如何使用資訊</h2>
+      <p>資訊僅用於提供與改善 App 功能——儲存您的紀錄、顯示提醒、（若啟用）在您的裝置間同步，以及診斷當機。我們<strong>不會</strong>為了廣告而販售、出租或分享您的個人資訊。</p>
+
+      <h2>八、資料保存與刪除</h2>
+      <p>您的紀錄會留在裝置上，直到您刪除它們或移除 App。您可隨時在 App 內刪除個別項目。若已啟用 iCloud 同步，在一台裝置上刪除資料時，也會從您的 iCloud 資料庫與其他已同步裝置中移除。移除 App 會從該裝置清除其本機資料。</p>
+
+      <h2>九、兒童隱私</h2>
+      <p>Furivo 並非針對 13 歲以下兒童設計，也不會在知情的情況下蒐集兒童的個人資訊。</p>
+
+      <h2>十、政策變更</h2>
+      <p>我們可能不時更新本隱私權政策。重大變更將以更新上方「最後更新日期」的方式呈現。</p>
+
+      <h2>十一、聯絡我們</h2>
+      <div class="contact">
+        <p style="margin:0">若您對本隱私權政策有任何疑問，歡迎與我們聯絡：</p>
+        <p style="margin:6px 0 0"><strong>Email：</strong><a href="mailto:j4688821105@gmail.com">j4688821105@gmail.com</a></p>
+      </div>
+    </article>
+
+    <footer>© 2026 Furivo. All rights reserved.</footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      var isEn = lang === 'en';
+      document.getElementById('lang-en').classList.toggle('active', isEn);
+      document.getElementById('lang-zh').classList.toggle('active', !isEn);
+      document.getElementById('btn-en').classList.toggle('active', isEn);
+      document.getElementById('btn-zh').classList.toggle('active', !isEn);
+      document.documentElement.lang = isEn ? 'en' : 'zh-Hant';
+      document.getElementById('effective').textContent = isEn
+        ? 'Effective date: 26 June 2026 · Last updated: 26 June 2026'
+        : '生效日期：2026 年 6 月 26 日 · 最後更新：2026 年 6 月 26 日';
+    }
+  </script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Furivo — Privacy Policy / 隱私權政策</title>
-  <meta name="description" content="Privacy Policy for the Furivo pet health & care app. / Furivo 寵物健康照護 App 隱私權政策。" />
+  <title>Furivo — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Furivo pet health and care app, available in English, Traditional Chinese, Japanese, and Korean." />
   <style>
     :root {
       --brand: #FF6F5E;
@@ -33,7 +33,7 @@
     h1 { font-size: 1.7rem; margin: 12px 0 4px; }
     .subtitle { color: var(--muted); margin: 0; font-size: 0.95rem; }
     .toggle {
-      display: flex; gap: 8px; justify-content: center;
+      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
       margin: 24px 0 8px;
     }
     .toggle button {
@@ -72,6 +72,9 @@
       background: rgba(255,111,94,0.06); border: 1px solid var(--line);
       border-radius: 12px; padding: 14px 18px; margin-top: 8px;
     }
+    .page-nav { display: flex; justify-content: center; gap: 16px; margin-top: 18px; }
+    .page-nav a { color: var(--muted); font-weight: 650; text-decoration: none; }
+    .page-nav a[aria-current="page"] { color: var(--brand); }
   </style>
 </head>
 <body>
@@ -80,13 +83,19 @@
       <div class="logo">🐾</div>
       <h1>Furivo</h1>
       <p class="subtitle">Pet Health &amp; Care</p>
+      <nav class="page-nav" aria-label="Legal pages">
+        <a href="./" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
     </header>
 
     <div class="toggle" role="tablist">
       <button id="btn-en" class="active" onclick="setLang('en')">English</button>
       <button id="btn-zh" onclick="setLang('zh')">繁體中文</button>
+      <button id="btn-ja" onclick="setLang('ja')">日本語</button>
+      <button id="btn-ko" onclick="setLang('ko')">한국어</button>
     </div>
-    <p class="effective" id="effective">Effective date: 26 June 2026 · Last updated: 26 June 2026</p>
+    <p class="effective" id="effective">Effective date: 26 June 2026 · Last updated: 16 July 2026</p>
 
     <!-- ============ ENGLISH ============ -->
     <article id="lang-en" class="lang active">
@@ -210,21 +219,110 @@
       </div>
     </article>
 
-    <footer>© 2026 Furivo. All rights reserved.</footer>
+    <!-- ============ 日本語 ============ -->
+    <article id="lang-ja" class="lang">
+      <h2>プライバシーポリシー</h2>
+      <p>本プライバシーポリシーは、ペットの健康・ケア記録アプリ <strong>Furivo</strong>（以下「本アプリ」）における情報の取り扱いについて説明します。</p>
+      <p><strong>要約：</strong>ペットの記録は原則としてお客様の端末に保存されます。当方は個人情報を販売せず、ペットの記録を当方のサーバーに保存しません。</p>
+
+      <h2>1. お客様が入力する情報</h2>
+      <p>本アプリでは、ペットのプロフィール、健康・ケア記録、写真、支出、リマインダーなどを入力できます。これらの情報は Apple の Core Data を使用して端末内に保存されます。</p>
+
+      <h2>2. 写真</h2>
+      <p>お客様が写真を追加する場合にのみ、写真ライブラリへアクセスします。選択した写真を当方または第三者のサーバーへアップロードすることはありません。iCloud 同期を有効にした場合は、お客様個人の iCloud に同期されます。</p>
+
+      <h2>3. iCloud 同期 <span class="pill">任意・初期設定はオフ</span></h2>
+      <p>iCloud 同期を有効にすると、Apple CloudKit を通じてお客様個人の非公開 iCloud データベースにデータが保存されます。当方はそのデータへアクセスできません。Apple は <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a>に従ってデータを処理します。</p>
+
+      <h2>4. 通知と端末ロック</h2>
+      <p>許可を得た場合、本アプリは端末上でローカル通知を設定します。Face ID、Touch ID、またはパスコードによる保護は Apple のシステム機能で処理され、本アプリが生体認証情報を取得または保存することはありません。</p>
+
+      <h2>5. 分析と診断</h2>
+      <p>品質改善のため、Firebase Analytics、Crashlytics、Remote Config を使用します。端末モデル、OS・アプリのバージョン、クラッシュログなど、限定的な技術情報や利用情報が処理される場合がありますが、ペット記録の内容は含まれません。詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a>および <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>をご確認ください。</p>
+
+      <h2>6. 利用目的と第三者提供</h2>
+      <p>情報は、本アプリの機能提供、端末間同期（有効な場合）、品質・安定性の改善にのみ使用します。個人情報を販売、貸与、または広告目的で共有することはありません。</p>
+
+      <h2>7. 保存と削除</h2>
+      <p>記録は、お客様が削除するか本アプリをアンインストールするまで端末に残ります。iCloud 同期中に削除すると、個人の iCloud データベースおよび同期中の端末からも削除されます。</p>
+
+      <h2>8. お子様のプライバシー</h2>
+      <p>本アプリは13歳未満のお子様を対象としておらず、当方が認識した上でお子様の個人情報を収集することはありません。</p>
+
+      <h2>9. ポリシーの変更</h2>
+      <p>本ポリシーを更新する場合があります。重要な変更は、上記の最終更新日を変更してお知らせします。</p>
+
+      <h2>10. お問い合わせ</h2>
+      <div class="contact"><p style="margin:0">本ポリシーに関するお問い合わせ：</p><p style="margin:6px 0 0"><strong>メール：</strong> <a href="mailto:j4688821105@gmail.com">j4688821105@gmail.com</a></p></div>
+    </article>
+
+    <!-- ============ 한국어 ============ -->
+    <article id="lang-ko" class="lang">
+      <h2>개인정보 처리방침</h2>
+      <p>본 개인정보 처리방침은 반려동물 건강 및 돌봄 기록 앱 <strong>Furivo</strong>(이하 “앱”)가 사용자의 정보를 처리하는 방식을 설명합니다.</p>
+      <p><strong>요약:</strong> 반려동물 기록은 원칙적으로 사용자의 기기에 저장됩니다. 당사는 개인정보를 판매하지 않으며, 반려동물 기록을 보관하는 자체 서버를 운영하지 않습니다.</p>
+
+      <h2>1. 사용자가 입력하는 정보</h2>
+      <p>사용자는 반려동물 프로필, 건강 및 돌봄 기록, 사진, 지출, 알림 등을 입력할 수 있습니다. 이러한 정보는 Apple Core Data를 사용하여 사용자의 기기에 저장됩니다.</p>
+
+      <h2>2. 사진</h2>
+      <p>사용자가 사진 추가를 선택한 경우에만 사진 보관함에 접근합니다. 선택한 사진을 당사 또는 제3자의 서버에 업로드하지 않습니다. iCloud 동기화를 켠 경우 사용자의 비공개 iCloud에 동기화됩니다.</p>
+
+      <h2>3. iCloud 동기화 <span class="pill">선택 사항 · 기본값 꺼짐</span></h2>
+      <p>iCloud 동기화를 켜면 Apple CloudKit을 통해 사용자의 비공개 iCloud 데이터베이스에 데이터가 저장됩니다. 당사는 이 데이터에 접근할 수 없습니다. Apple은 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보 처리방침</a>에 따라 데이터를 처리합니다.</p>
+
+      <h2>4. 알림 및 기기 잠금</h2>
+      <p>허용한 경우 앱은 기기에서 로컬 알림을 예약합니다. Face ID, Touch ID 또는 암호 인증은 Apple 시스템에서 처리되며 앱은 생체 정보를 수신하거나 저장하지 않습니다.</p>
+
+      <h2>5. 분석 및 진단</h2>
+      <p>서비스 개선을 위해 Firebase Analytics, Crashlytics 및 Remote Config를 사용합니다. 기기 모델, OS 및 앱 버전, 충돌 기록 등 제한적인 기술·사용 정보가 처리될 수 있으나 반려동물 기록의 내용은 포함되지 않습니다. 자세한 내용은 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 개인정보 보호 및 보안</a>과 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보 처리방침</a>을 참조하십시오.</p>
+
+      <h2>6. 정보 이용 및 공유</h2>
+      <p>정보는 앱 기능 제공, 기기 간 동기화(활성화한 경우), 품질 및 안정성 개선에만 사용됩니다. 당사는 개인정보를 판매, 대여하거나 광고 목적으로 공유하지 않습니다.</p>
+
+      <h2>7. 보관 및 삭제</h2>
+      <p>기록은 사용자가 삭제하거나 앱을 제거할 때까지 기기에 보관됩니다. iCloud 동기화 사용 중 삭제한 데이터는 사용자의 iCloud 데이터베이스와 동기화된 다른 기기에서도 삭제됩니다.</p>
+
+      <h2>8. 아동의 개인정보</h2>
+      <p>Furivo는 만 13세 미만의 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+      <h2>9. 방침 변경</h2>
+      <p>본 방침은 변경될 수 있습니다. 중요한 변경 사항은 위의 최종 업데이트 날짜를 수정하여 안내합니다.</p>
+
+      <h2>10. 문의</h2>
+      <div class="contact"><p style="margin:0">본 방침에 관한 문의:</p><p style="margin:6px 0 0"><strong>이메일:</strong> <a href="mailto:j4688821105@gmail.com">j4688821105@gmail.com</a></p></div>
+    </article>
+
+    <footer>© 2026 Furivo. All rights reserved. · <a href="terms.html">Terms of Use</a></footer>
   </div>
 
   <script>
+    var dates = {
+      en: 'Effective date: 26 June 2026 · Last updated: 16 July 2026',
+      zh: '生效日期：2026 年 6 月 26 日 · 最後更新：2026 年 7 月 16 日',
+      ja: '施行日：2026年6月26日 · 最終更新日：2026年7月16日',
+      ko: '시행일: 2026년 6월 26일 · 최종 업데이트: 2026년 7월 16일'
+    };
+    var htmlLang = { en: 'en', zh: 'zh-Hant', ja: 'ja', ko: 'ko' };
     function setLang(lang) {
-      var isEn = lang === 'en';
-      document.getElementById('lang-en').classList.toggle('active', isEn);
-      document.getElementById('lang-zh').classList.toggle('active', !isEn);
-      document.getElementById('btn-en').classList.toggle('active', isEn);
-      document.getElementById('btn-zh').classList.toggle('active', !isEn);
-      document.documentElement.lang = isEn ? 'en' : 'zh-Hant';
-      document.getElementById('effective').textContent = isEn
-        ? 'Effective date: 26 June 2026 · Last updated: 26 June 2026'
-        : '生效日期：2026 年 6 月 26 日 · 最後更新：2026 年 6 月 26 日';
+      if (!dates[lang]) lang = 'en';
+      ['en', 'zh', 'ja', 'ko'].forEach(function (code) {
+        document.getElementById('lang-' + code).classList.toggle('active', code === lang);
+        document.getElementById('btn-' + code).classList.toggle('active', code === lang);
+      });
+      document.documentElement.lang = htmlLang[lang];
+      document.getElementById('effective').textContent = dates[lang];
+      try { localStorage.setItem('furivo-lang', lang); } catch (e) {}
     }
+    (function () {
+      var preferred = 'en';
+      try { preferred = localStorage.getItem('furivo-lang') || ''; } catch (e) {}
+      if (!dates[preferred]) {
+        var browserLang = (navigator.language || '').toLowerCase();
+        preferred = browserLang.indexOf('zh') === 0 ? 'zh' : browserLang.indexOf('ja') === 0 ? 'ja' : browserLang.indexOf('ko') === 0 ? 'ko' : 'en';
+      }
+      setLang(preferred);
+    })();
   </script>
 </body>
 </html>
